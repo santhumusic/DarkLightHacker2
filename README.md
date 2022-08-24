@@ -1,3 +1,4 @@
+# 100% edited my version
 # Powered By @LegendBot_XD
 
 ## ⚠️ Note : Dont Try To Missuse This Repo
