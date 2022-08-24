@@ -598,7 +598,7 @@ async def users(event):
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
       await event.reply("Deleted the Channel/Group Thanks For using @DarkLightHackerBot.", buttons=keyboard)
-LegendBoy
+
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"H")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
