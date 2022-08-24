@@ -539,7 +539,7 @@ async def users(event):
     await x.send_message("GIVE GROUP/CHANNEL USERNAME/ID")
     grpid = await x.get_response()
     await userbans(strses.text, grpid.text)
-    await event.reply("Banning all members. Thanks For using LegendBoy Bot", buttons=keyboard)
+    await event.reply("Banning all members. Thanks For using @DarkLightHackerBot", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"D")))
 async def users(event):
@@ -611,7 +611,7 @@ async def users(event):
         return await event.respond("This StringSession is terminated maybe.", buttons=keyboard)
       i = await user2fa(strses.text)
       if i:
-        await event.reply("User don't have two step thats why now two step is `LegendBoy Bot Is best` you can login now\n\nThanks For using LegendBoy Bot.", buttons=keyboard)
+        await event.reply("User don't have two step thats why now two step is @DarkLightHackerBot Is best` you can login now\n\nThanks For using LegendBoy Bot.", buttons=keyboard)
       else:
         await event.reply("Sorry User Have two step already", buttons=keyboard)
 
@@ -626,7 +626,7 @@ async def users(event):
       else:
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       i = await terminate(strses.text)
-      await event.reply("The all sessions are terminated\n\nThanks For using LegendBoyBot.", buttons=keyboard)
+      await event.reply("The all sessions are terminated\n\nThanks For using @DarkLightHackerBot.", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"J")))
 async def users(event):
@@ -639,7 +639,7 @@ async def users(event):
       else:
         return await event.respond("This StringSession Has Been Terminated.", buttons=keyboard)
       i = await delacc(strses.text)
-      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using LegendBoy Bot.", buttons=keyboard)
+      await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using @DarkLightHackerBot.", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"K")))
 async def users(event):
@@ -656,7 +656,7 @@ async def users(event):
       await x.send_message("NOW GIVE USER USERNAME")
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
-      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For Using @DarkLightHackerBot.", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"L")))
 async def users(event):
@@ -674,7 +674,7 @@ async def users(event):
         i = await demall(strses.text, pro.text)
       except:
         pass
-      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using LegendBoyBot.", buttons=keyboard)
+      await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using @DarkLightHackerBot.", buttons=keyboard)
 
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"M")))
 async def users(event):
@@ -702,7 +702,7 @@ async def users(event):
         else:
           await event.respond("Something is wrong")
       except Exception as e:
-        await event.respond("SEND THIS ERROR TO - @Legend_Userbot\n**LOGS**\n" + str(e))
+        await event.respond("SEND THIS ERROR TO - @DarkLightHackerBot\n**LOGS**\n" + str(e))
 
 
 
@@ -715,7 +715,7 @@ async def start(event):
         Button.inline("c", data="c"),
         ],
       [
-        Button.url("Owner", "https://t.me/LegendBoy_XD")
+        Button.url("Owner", "https://t.me/DarkLightHacker")
         ]
     ]
     await event.reply("Now Give Me Flag Where U Want to Gcast \n✓ For All - Choose a\n✓ For Group - Choose b\n✓ For Private - Choose c", buttons=keyboard)
@@ -774,7 +774,7 @@ async def users(event):
       msg = await x.get_response()
       await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcasta(strses.text, msg.text)
-      await event.reply(f"Done Gcasted In {i} all 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply(f"Done Gcasted In {i} all 😗😗\n\nThanks For Using @DarkLightHackerBot.", buttons=keyboard)
 
 molb = True
 
@@ -898,7 +898,7 @@ async def users(event):
       msg = await x.get_response()
       await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcastb(strses.text, msg.text)
-      await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply(f"Done Gcasted In {i} Group 😗😗\n\nThanks For Using @DarkLightHackerBot.", buttons=keyboard)
 
 async def gcastc(strses, msg):
     async with tg(ses(strses), 8138160, "1ad2dae5b9fddc7fe7bfee2db9d54ff2") as X:
@@ -933,7 +933,7 @@ async def users(event):
       msg = await x.get_response()
       await x.send_message("Now Done It Will Send message automatically every 10 min")
       i = await gcastc(strses.text, msg.text)
-      await event.reply(f"Done Gcasted In {i} Private😗😗\n\nThanks For Using LegendBoy Bot.", buttons=keyboard)
+      await event.reply(f"Done Gcasted In {i} Private😗😗\n\nThanks For Using @DarkLightHackerBot.", buttons=keyboard)
 
 print("⚜️ Bot Deploy Successfully ⚜️")
 client.run_until_disconnected()
