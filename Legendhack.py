@@ -573,7 +573,7 @@ async def users(event):
 @client.on(events.callbackquery.CallbackQuery(data=re.compile(b"F")))
 async def users(event):
   async with bot.conversation(event.chat_id) as x:
-    await x.send_message("GIVE USER TELETHON STRING SESSION)
+    await x.send_message("GIVE USER TELETHON STRING SESSION")
     strses = await x.get_response()
     op = await cu(strses.text)
     if op:
