@@ -447,7 +447,7 @@ async def op(event):
         Button.url("Must Join", f"https://t.me/Rjbr0")
         ]
       ]
-    await event.reply("First Join Channel!\n Then Try Click Here ~ /hack", buttons=legendbye)
+    await event.reply("Mg bro! First Join Channel😏\n😒Then Try Click Here ~ /hack", buttons=legendbye)
     
        
 @client.on(events.NewMessage(pattern="/hack", func=lambda x: x.is_group))
