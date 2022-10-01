@@ -1,5 +1,4 @@
-# 100% edited my version
-# Powered By @LegendBot_XD
+# DarkLightHackerBot
 
 ## ⚠️ Note : Dont Try To Missuse This Repo
 
