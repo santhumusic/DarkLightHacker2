@@ -402,7 +402,7 @@ menu = '''
 I will add more features Later 😁
 '''
 mm = '''
-**⚜NOTICE FIRST JOIN G-NETWORK GROUP @RJbr0⚜**
+**⚜NOTICE FIRST JOIN DarkLightNetwork GROUP @DarkLightHacker⚜**
 '''
 
 keyboard = [
