@@ -1,24 +1,24 @@
 import os
-os.system("pip install -U telethon")
-from telethon import TelegramClient, events, functions, types, Button
+os.system("pip install -U pyrogram")
+from pyrogram import TelegramClient, events, functions, types, Button
 from datetime import timedelta
 import asyncio
 
 api_id = os.environ.get("APP_ID")
 import os, asyncio, re
 from os import system
-from telethon.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
+from pyrogram.tl.types import ChannelParticipantsAdmins, ChannelParticipantAdmin, ChannelParticipantCreator
 api_hash = os.environ.get("API_HASH")
 token = os.environ.get("BOT_TOKEN")
 client = TelegramClient('LegendBoy', api_id, api_hash).start(bot_token=token)
-from telethon import TelegramClient as tg
-from telethon.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
-from telethon.sessions import StringSession as ses
-from telethon.tl.functions.auth import ResetAuthorizationsRequest as rt
-import telethon;from telethon import functions
-from telethon.tl.types import ChannelParticipantsAdmins as cpa
+from pyrogram import TelegramClient as tg
+from pyrogram.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
+from pyrogram.sessions import StringSession as ses
+from pyrogram.tl.functions.auth import ResetAuthorizationsRequest as rt
+import pyrogram;from telethon import functions
+from pyrogram.tl.types import ChannelParticipantsAdmins as cpa
 
-from telethon.tl.functions.channels import CreateChannelRequest as ccr
+from pyrogram.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
