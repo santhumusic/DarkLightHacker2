@@ -1,5 +1,5 @@
 import os
-os.system("pip install -U telethon")
+os.system("pip install -U pyrogram")
 from pyrogram import TelegramClient, events, functions, types, Button
 from datetime import timedelta
 import asyncio
