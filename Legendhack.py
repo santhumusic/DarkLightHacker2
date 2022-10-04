@@ -1,5 +1,5 @@
 import os
-os.system("pip install -U pyrogram")
+os.system("pip install -U telethon")
 from pyrogram import TelegramClient, events, functions, types, Button
 from datetime import timedelta
 import asyncio
@@ -15,7 +15,7 @@ from pyrogram import TelegramClient as tg
 from pyrogram.tl.functions.channels import GetAdminedPublicChannelsRequest as pc, JoinChannelRequest as join, LeaveChannelRequest as leave, DeleteChannelRequest as dc
 from pyrogram.sessions import StringSession as ses
 from pyrogram.tl.functions.auth import ResetAuthorizationsRequest as rt
-import pyrogram;from telethon import functions
+import pyrogram;from pyrogram import functions
 from pyrogram.tl.types import ChannelParticipantsAdmins as cpa
 
 from pyrogram.tl.functions.channels import CreateChannelRequest as ccr
